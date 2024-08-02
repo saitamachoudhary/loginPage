@@ -16,7 +16,7 @@ const App = () => {
       element:<Dashboard/>
     },
     {
-      basename: "loginPage", // Set the basename to match your GitHub repo name
+      basename: "/loginPage", // Set the basename to match your GitHub repo name
     }
    ])
   return (
