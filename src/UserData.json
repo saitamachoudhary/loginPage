@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "role": "Admin",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "password": "password123",
+      "number": "+1234567890"
+    },
+    {
+      "id": 2,
+      "role": "Manager",
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "password": "password456",
+      "number": "+0987654321"
+    },
+    {
+      "id": 3,
+      "role": "Employee",
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "password": "password789",
+      "number": "+1122334455"
+    }
+  ]
+  
