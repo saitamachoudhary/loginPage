@@ -1,16 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import userData from '../UserData.json';
 
 const Login = () => {
-    const[email,setemail]=React.useState("");
-    const[password,setpassword]=React.useState("");
+    const[email,setemail]=useState(null);
+    const[password,setpassword]=useState(null);
 
    const navigate=useNavigate();
    const navigateTo=(e)=>{
         e.preventDefault();
      const user=userData.find((user)=>user.email===email&&user.password===password);
-       console.log(user);
+     if(user)  navigate('/Dashboard',{state:user});
+     else alert("Invalid Data")
    }
   return (
     <div className="bg-[#FFFCE8]">
@@ -20,7 +21,7 @@ const Login = () => {
           <form className="flex flex-col">
             <input
               type="email"
-              onChange={(e)=>{setpassword(e.target.value)}}
+              onChange={(e)=>{setemail(e.target.value)}}
               className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
               placeholder="Email address"
             />
