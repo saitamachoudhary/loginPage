@@ -4,7 +4,7 @@ import { CiEdit } from "react-icons/ci";
 import ItemManagement from "./ItemManagement";
 import { useLocation } from "react-router-dom";
 const DropDown = ({ user, items, deleteItem, updateItem }) => {
-    // console.log(items)
+
   const [open, setclose] = useState(false);
   const [editId, setEditId] = useState(null);
   const [editValue, setEditValue] = useState("");
